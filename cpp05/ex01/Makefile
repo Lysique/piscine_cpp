@@ -6,12 +6,12 @@
 #    By: tamighi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/19 09:30:56 by tamighi           #+#    #+#              #
-#    Updated: 2022/03/19 12:55:19 by tamighi          ###   ########.fr        #
+#    Updated: 2022/03/22 14:38:07 by tamighi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Bureaucrat
-CC = clang++
+CC = c++
 FLAGS = -Wall -Werror -Wextra -pedantic -std=c++98
 
 OBJ_DIR = objs/

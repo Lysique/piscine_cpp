@@ -6,12 +6,12 @@
 #    By: tamighi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/22 12:32:49 by tamighi           #+#    #+#              #
-#    Updated: 2022/03/22 12:39:17 by tamighi          ###   ########.fr        #
+#    Updated: 2022/03/22 14:38:51 by tamighi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Base
-CC = clang++
+CC = c++
 FLAGS = -Wall -Werror -Wextra -pedantic -std=c++98
 
 OBJ_DIR = objs/

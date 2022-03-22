@@ -6,12 +6,12 @@
 #    By: tamighi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/16 11:05:42 by tamighi           #+#    #+#              #
-#    Updated: 2022/03/17 10:39:08 by tamighi          ###   ########.fr        #
+#    Updated: 2022/03/22 14:32:03 by tamighi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Animal
-CC = clang++
+CC = c++
 FLAGS = -Wall -Werror -Wextra -pedantic -std=c++98
 
 OBJ_DIR = objs/

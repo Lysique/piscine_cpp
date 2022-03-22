@@ -5,20 +5,20 @@
 #                                                     +:+ +:+         +:+      #
 #    By: tamighi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/03/22 08:48:52 by tamighi           #+#    #+#              #
-#    Updated: 2022/03/22 14:38:37 by tamighi          ###   ########.fr        #
+#    Created: 2022/03/22 14:59:08 by tamighi           #+#    #+#              #
+#    Updated: 2022/03/22 14:59:16 by tamighi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Cast
+NAME = iter
 CC = c++
 FLAGS = -Wall -Werror -Wextra -pedantic -std=c++98
 
 OBJ_DIR = objs/
 
-FILES = main.cpp TypePrinter.cpp
+FILES = main.cpp
 F_DIR = srcs/
-HEADERS = TypePrinter.hpp
+HEADERS = iter.hpp
 H_DIR = includes/
 
 SRCS = $(addprefix $(F_DIR), $(FILES))

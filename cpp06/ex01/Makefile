@@ -6,12 +6,12 @@
 #    By: tamighi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/22 12:18:06 by tamighi           #+#    #+#              #
-#    Updated: 2022/03/22 12:25:56 by tamighi          ###   ########.fr        #
+#    Updated: 2022/03/22 14:38:44 by tamighi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Serialize
-CC = clang++
+CC = c++
 FLAGS = -Wall -Werror -Wextra -pedantic -std=c++98
 
 OBJ_DIR = objs/
