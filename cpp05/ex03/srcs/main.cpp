@@ -6,7 +6,7 @@
 /*   By: tamighi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 09:31:33 by tamighi           #+#    #+#             */
-/*   Updated: 2022/03/21 11:46:24 by tamighi          ###   ########.fr       */
+/*   Updated: 2022/03/26 10:00:33 by tamighi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	main(void)
 	bp.executeForm(*f1);
 	delete f1;
 	std::cout << std::endl;
-	f1 = intern.makeForm("presidential pardon", "Garden");
+	f1 = intern.makeForm("presidential pardon", "Presid");
 	cp.signForm(*f1);
 	bp.signForm(*f1);
 	cp.executeForm(*f1);

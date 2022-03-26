@@ -5,26 +5,29 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamighi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 13:33:23 by tamighi           #+#    #+#             */
-/*   Updated: 2022/03/22 15:50:49 by tamighi          ###   ########.fr       */
+/*   Created: 2022/03/23 11:11:26 by tamighi           #+#    #+#             */
+/*   Updated: 2022/03/23 14:43:42 by tamighi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/whatever.hpp"
+#include "../includes/easyfind.tpp"
 
 int	main(void)
 {
-	int a = 2;
-	int b = 3;
-	::swap( a, b );
-	std::cout << "a = " << a << ", b = " << b << std::endl;
-	std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
-	std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
-	std::string c = "chaine1";
-	std::string d = "chaine2";
-	::swap(c, d);
-	std::cout << "c = " << c << ", d = " << d << std::endl;
-	std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
-	std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
-	return 0;
+	std::list<int>	lst;
+	std::list<int>::iterator	it;
+
+	lst.push_back(5);
+	lst.push_back(2);
+	lst.push_back(9);
+	lst.push_back(1);
+	try
+	{
+		it = easyfind(lst, 2);
+		std::cout << *it << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
 }

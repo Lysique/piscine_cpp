@@ -5,26 +5,34 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamighi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 13:33:23 by tamighi           #+#    #+#             */
-/*   Updated: 2022/03/22 15:50:49 by tamighi          ###   ########.fr       */
+/*   Created: 2022/03/26 11:40:23 by tamighi           #+#    #+#             */
+/*   Updated: 2022/03/26 11:47:49 by tamighi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/whatever.hpp"
+#include "../includes/MutantStack.tpp"
 
 int	main(void)
 {
-	int a = 2;
-	int b = 3;
-	::swap( a, b );
-	std::cout << "a = " << a << ", b = " << b << std::endl;
-	std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
-	std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
-	std::string c = "chaine1";
-	std::string d = "chaine2";
-	::swap(c, d);
-	std::cout << "c = " << c << ", d = " << d << std::endl;
-	std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
-	std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
+	MutantStack<int> mstack;
+	mstack.push(5);
+	mstack.push(17);
+	std::cout << mstack.top() << std::endl;
+	mstack.pop();
+	std::cout << mstack.size() << std::endl;
+	mstack.push(3);
+	mstack.push(5);
+	mstack.push(737);
+	mstack.push(0);
+	MutantStack<int>::iterator it = mstack.begin();
+	MutantStack<int>::iterator ite = mstack.end();
+	++it;
+	--it;
+	while (it != ite)
+	{
+		std::cout << *it << std::endl;
+		++it;
+	}
+	std::stack<int> s(mstack);
 	return 0;
 }
